@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valutaváltó</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="display">
+                <input type="text" id="result" readonly>
+            </div>
+            <div id="instructions"></div>
+            <div class="buttons">
+                <button class="function" id="ce-button">CE</button>
+                <button class="function" id="r-button">R</button>
+                <button class="function" id="h-button">H</button>
+                <button class="clear">C</button>
+                <button class="number">1</button>
+                <button class="number">2</button>
+                <button class="number">3</button>
+                <button class="function" id="min-button">MIN</button>
+                <button class="number">4</button>
+                <button class="number">5</button>
+                <button class="number">6</button>
+                <button class="function" id="add-button">ADD</button>
+                <button class="number">7</button>
+                <button class="number">8</button>
+                <button class="number">9</button>
+                <button class="function" id="submit-button">Bevitel</button>
+                <button class="decimal">.</button>
+                <button class="number">0</button>
+                <button class="function" id="info-button">i</button>
+                <button class="function" id="backspace">&larr;</button>
+            </div>
+        </div>
+        <div class="total-display">
+            <h3>Összesített költés:</h3>
+            <p id="total-huf">0 HUF</p>
+            <p id="total-ron">0 RON</p>
+        </div>
+        <div class="new-total-display">
+            <h3>Új Teljes összeg:</h3>
+            <p id="new-total-huf">0 HUF</p>
+            <p id="new-total-ron">0 RON</p>
+        </div>
+    </div>
+    <div id="info-panel" class="hidden">
+        <h3>Gombok funkciói:</h3>
+        <ul>
+            <li><strong>CE:</strong> Teljes újraindítás</li>
+            <li><strong>C:</strong> Aktuális bevitel törlése</li>
+            <li><strong>R:</strong> RON → HUF váltás</li>
+            <li><strong>H:</strong> HUF → RON váltás</li>
+            <li><strong>MIN:</strong> Összeg kivonása</li>
+            <li><strong>ADD:</strong> Összeg hozzáadása</li>
+            <li><strong>Bevitel:</strong> Érték megerősítése</li>
+            <li><strong>i:</strong> Információs panel</li>
+            <li><strong>←:</strong> Utolsó karakter törlése</li>
+        </ul>
+        <button id="close-info">Bezárás</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
